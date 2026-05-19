@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رسالة العيد ❤️</title>
+
+  <style>
+    body{
+      margin:0;
+      padding:20px;
+      background: linear-gradient(to bottom, #ffb6c1, #fff);
+      font-family: Arial, sans-serif;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      direction: rtl;
+    }
+
+    .box{
+      background:white;
+      padding:30px;
+      border-radius:20px;
+      width:90%;
+      max-width:500px;
+      text-align:center;
+      box-shadow:0 0 20px rgba(0,0,0,0.2);
+    }
+
+    h2{
+      color:#ff2e6a;
+    }
+
+    input{
+      width:80%;
+      padding:12px;
+      border-radius:10px;
+      border:1px solid #ccc;
+      margin-top:15px;
+      font-size:18px;
+      text-align:center;
+    }
+
+    button{
+      margin-top:15px;
+      padding:12px 25px;
+      border:none;
+      border-radius:10px;
+      background:#ff4f81;
+      color:white;
+      font-size:18px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#ff2e6a;
+    }
+
+    #message{
+      margin-top:25px;
+      font-size:22px;
+      color:#d6336c;
+      line-height:2;
+      display:none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+
+    <h2>❤️ اكتبي الباسورد ❤️</h2>
+
+    <input type="password" id="password" placeholder="الباسورد">
+
+    <br>
+
+    <button onclick="checkPassword()">فتح الرسالة</button>
+
+    <div id="message">
+
+      كل سنة وانتي أجمل عيد في حياتي ❤️<br><br>
+      يمكن الظروف مخلّيانا بعيد، بس انتي دايمًا في قلبي ❤️<br><br>
+      ربنا يحفظك ليا ويجمعنا على خير ✨
+
+    </div>
+
+  </div>
+
+  <script>
+    function checkPassword() {
+      let pass = document.getElementById("password").value;
+
+      if(pass === "19/7/2025") {
+        document.getElementById("message").style.display = "block";
+      } else {
+        alert("الباسورد غلط 💔");
+      }
+    }
+  </script>
+
+</body>
+</html>
